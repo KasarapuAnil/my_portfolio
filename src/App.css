@@ -1,0 +1,79 @@
+/* Default (Dark Mode) */
+body {
+  background-color: #121212;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Light Mode */
+body.light {
+  background-color: #ffffff;
+  color: black;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  transition: background 0.3s ease;
+}
+
+/* Navbar in Light Mode */
+body.light .navbar {
+  background-color: #ddd;
+}
+
+/* Navigation Links */
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 16px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Links in Light Mode */
+body.light .nav-link {
+  color: black;
+}
+
+/* Hover Effect */
+.nav-link:hover {
+  background-color: #444;
+  border-radius: 5px;
+}
+
+/* Light Mode Hover */
+body.light .nav-link:hover {
+  background-color: #bbb;
+}
+
+/* Page Content */
+.content {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  margin-left: 20px;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  background-color: #555;
+  color: white;
+  border-radius: 5px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Theme Toggle in Light Mode */
+body.light .theme-toggle {
+  background-color: #ddd;
+  color: black;
+}
